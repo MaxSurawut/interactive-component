@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: #141519;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.card-rate{
+    width: 410px;
+    height: 420px;
+    background-color: #1d242e;
+    border-radius: 30px;
+   
+}
+.card-rate img.star{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #222f40;  
+    margin: 30px 0 0 30px;
+}
+.card-rate h1{
+    color: #fff;
+    margin: 30px 0 0 30px;
+}
+.card-rate p{
+    color: #949aa6;
+    margin: 20px 0 0 30px;
+}
+.form{
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+}
+.form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form__radio-input{
+    display: none;
+}
+.form_radio-label{
+    display: block;
+    cursor: pointer;
+    margin-right: 55px;
+    margin-bottom: 50px;
+}
+.form_radio-button{
+    height: 50px;
+    width: 50px;
+    background-color: #262f38;
+    border-radius: 100%;
+    position: absolute;;
+    transition: background-color 0.2s;
+}
+.form_radio-button::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #7c8898;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.form_radio-button div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400px;
+    z-index: 55;
+}
+.form_radio-button:hover{
+    background-color: #fe7612;
+}
+.form__radio-input:checked ~ .form_radio-label .form_radio-button::after{
+    opacity: 1;
+}
+.form__button{
+    width: 100%;
+    background-color: #fe7612;
+    padding: 15px 20px;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+}
+.form__button:hover{
+    background-color: #fff;
+    color: #fe7612;
+}
+.thank-card{
+    text-align: center;
+    width: 410px;
+    height: 420px;
+    background-color: #1d242e;
+    border-radius: 30px;
+}
+.thank-card img{
+    margin: 30px auto;
+    display: block;
+}
+.thank-card h3{
+    display: inline-block;
+    background-color: #262f38;
+    padding: 10px 20px;
+    margin: 20px auto;
+    color: #fe7612;
+    border-radius: 20px;
+    font-weight: 400;
+}
+.thank-card h1{
+    margin: 20px auto;
+    color: #fff;
+}
+.thank-card p{
+    color: #949aa6;
+    margin: 20px auto;
+    width: 90%;
+}
